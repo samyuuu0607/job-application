@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Job Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Post a Job</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Find Your Dream Job Today!</h2>
+        <button onclick="showJobForm()">Post a Job</button>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="job-listings">
+        <h2>Available Jobs</h2>
+        <div id="jobs-container"></div>
+    </section>
+
+    <!-- Job Posting Form -->
+    <section id="post-job-form" class="modal">
+        <div class="modal-content">
+            <h2>Post a Job</h2>
+            <label>Job Title:</label>
+            <input type="text" id="jobTitle" placeholder="Enter job title">
+            <label>Company Name:</label>
+            <input type="text" id="companyName" placeholder="Enter company name">
+            <label>Location:</label>
+            <input type="text" id="location" placeholder="Enter job location">
+            <label>Salary:</label>
+            <input type="text" id="salary" placeholder="Enter salary">
+            <button onclick="postJob()">Submit</button>
+            <button onclick="closeForm()">Close</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
